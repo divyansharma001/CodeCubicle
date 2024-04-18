@@ -21133,113 +21133,103 @@ disabled look for disabled choices in the results dropdown
   padding: 29px 30px 35px;
 }
 
-/* contact info */
+/* VENUE & SOCIAL CARDS - SANCHIT */
 
-.card {
+.e-card {
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
   position: relative;
-  width: 220px;
-  height: 320px;
-  background: mediumturquoise;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
+  width: 30vw;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.card::before,
-.card::after {
+@media (max-width: 678px) {
+  .e-card {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 679px) and (max-width: 1024px) {
+  .e-card {
+    width: 35vw;
+  }
+}
+
+.wave {
   position: absolute;
-  content: "";
-  width: 20%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: lightblue;
-  transition: all 0.5s;
-}
-
-.card::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
-}
-
-.card::after {
-  bottom: 0;
+  width: 940px;
+  height: 700px;
+  opacity: 0.6;
   left: 0;
-  border-radius: 0 100% 0 15px;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
 }
 
-.card:hover::before,
-.card:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
 }
 
-.card:hover:after {
-  content: url("../images/linktree-icon.png");
-  transform: scale(0.5);
+.infotop {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 4em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
-/* card 2 */
-.card-2 {
+.name {
+  font-size: 14px;
+  font-weight: 100;
   position: relative;
-  width: 220px;
-  height: 320px;
-  background: #f56954;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
+  top: 1em;
 }
 
-.card-2::before,
-.card-2::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: #f8e69e;
-  transition: all 0.5s;
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
 }
 
-.card-2::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
 }
 
-.card-2::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 15px;
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
 }
 
-.card-2:hover::before,
-.card-2:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
 }
 
-.card-2:hover:after {
-  content: url("../images/location.png");
-  transform: scale(0.5);
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

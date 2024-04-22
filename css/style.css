@@ -15850,7 +15850,39 @@ html.rd-navbar-fixed-linked .page-header {
 @media (min-width: 1600px) {
   .swiper-button-next {
     right: 75px;
-  }
+}
+}
+
+.background-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; 
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the image is behind the content */
+}
+.swiper-slide-caption {
+  position: relative;
+  color: #ffffff; /* Set the font color to bright white */
+  text-align: center; /* Center align text */
+}
+
+.swiper-slide-caption h1 {
+  color: #ffffff; /* Set the font color to bright white for h1 */
+}
+.swiper-slide-caption {
+  position: relative; /* Ensure the caption is positioned correctly */
 }
 
 .swiper-slider.swiper-container-rtl .swiper-button-prev::before {

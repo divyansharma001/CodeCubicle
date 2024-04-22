@@ -6590,7 +6590,8 @@ textarea.textarea-lg {
 }
 
 .thumbnail-md {
-  max-width: 420px;
+  max-width: 300px;
+  max-height: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -6735,7 +6736,10 @@ textarea.textarea-lg {
     will-change: transform;
   }
   .desktop .thumbnail-classic-title-wrap .icon {
-    margin-right: 24px;
+	width: 40px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 5px;
     font-size: 36px;
   }
   .desktop .thumbnail-classic-text {

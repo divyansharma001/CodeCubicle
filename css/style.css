@@ -21285,3 +21285,100 @@ disabled look for disabled choices in the results dropdown
     transform: rotate(360deg);
   }
 }
+
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+#faq {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 100px 20px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1200px;
+  min-width: 500px;
+}
+
+.faq .faq-item {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+.faq .faq-item .faq-item-description-wrapper hr {
+  border: none;
+  visibility: visible;
+}
+
+.faq .faq-item.open .faq-item-description-wrapper hr {
+  visibility: visible;
+}
+
+.faq .faq-item .faq-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 25px;
+  transition: all 0.4s ease;
+}
+
+.faq-item-header:hover {
+  color: #1a4eff;
+
+}
+
+.faq .faq-item .faq-item-header .faq-item-header-title {
+  font-weight: 400;
+}
+
+.faq .faq-item .faq-item-header .faq-item-header-icon {
+  transition: all 0.4s ease;
+}
+
+.faq
+  .faq-item.open
+  .faq-item-header
+  .faq-item-header-icon {
+  transform: rotate(-180deg);
+}
+
+.faq .faq-item .faq-item-description-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.faq .faq-item.open .faq-item-description-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.faq
+  .faq-item
+  .faq-item-description-wrapper
+  .faq-item-description {
+  min-height: 0;
+  margin: auto 20px;
+  text-align: left;
+  color: #9b9b9b;
+}
+
+.faq
+  .faq-item
+  .faq-item-description-wrapper
+  .faq-item-description
+  p {
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}

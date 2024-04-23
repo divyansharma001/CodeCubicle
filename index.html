@@ -10,6 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <link rel="icon" href="images/Logo - Dark BG.png" type="image/x-icon" />
+    <!-- Using Font Awesome CDN link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Stylesheets-->
     <link
       rel="stylesheet"
@@ -179,11 +182,15 @@
               class="swiper-slide"
             >
             <div class="background-wrapper">
-            <img src="images\grbg.jpg" alt="Background Image" class="background-image">
+              <video autoplay muted loop class="background-video">
+                <source src="video\cube.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            <!-- <img src="images\grbg.jpg" alt="Background Image" class="background-image"> -->
             <!--data-slide-bg="images/slider-1-slide-2-1770x742.jpg"-->
               <div class="swiper-slide-caption section-md">
                 <div class="container">
-                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">
+                  <h1 class="title" data-caption-animate="fadeInLeft" data-caption-delay="0">
                     Code Cubicle
                   </h1>
                   <p
@@ -200,7 +207,7 @@
                     class="button button-primary button-ujarak"
                     href="https://code-cubicle.devfolio.co/"
                     target="_blank"
-                    >Registor</a
+                    >Register</a
                   >
                 </div>
               </div>
@@ -211,7 +218,11 @@
             >
             <!--data-slide-bg="images/slider-1-slide-4-1770x742.jpg"-->
               <div class="background-wrapper">
-              <img src="images\BACK.jpg" alt="Background Image" class="background-image">
+                <video autoplay muted loop class="background-video">
+                  <source src="video\(61) Post _ LinkedIn - Google Chrome 2024-04-23 22-15-09.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              <!-- <img src="images\BACK.jpg" alt="Background Image" class="background-image"> -->
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">
@@ -222,8 +233,7 @@
                     data-caption-animate="fadeInRight"
                     data-caption-delay="100"
                   >
-                  A vibrant coding community dedicated to collective growth and innovation. From dynamic hackathons to mentorship programs, we offer opportunities for skill enhancement and collaboration. Engage in exhilarating competitions, both within and beyond, as we foster a supportive environment for honing your coding prowess and unleashing your creativity."
-                  </p>
+                  A vibrant coding community dedicated to collective growth and innovation. From dynamic hackathons to mentorship programs, we offer opportunities for skill enhancement and collaboration.   </p>
                   <a
                     class="button button-primary button-ujarak"
                     href="https://www.linkedin.com/company/geekr00m/"
@@ -234,10 +244,10 @@
               </div>
               </div>
             </div>
-            <div
+            <!-- <div
               class="swiper-slide"
-            >
-            <!--data-slide-bg="images/slider-1-slide-6-1770x742.jpg"-->
+            
+            data-slide-bg="images/slider-1-slide-6-1770x742.jpg"
             <div class="background-wrapper">
               <img src="images\reskbg.jpg" alt="Background Image" class="background-image">
               <div class="swiper-slide-caption section-md">
@@ -260,7 +270,7 @@
                 </div>
               </div>
             </div>
-            </div>
+            </div>-->
           </div>
           <!-- Swiper Pagination-->
           <div class="swiper-pagination__module">
@@ -306,22 +316,19 @@
                 </div>
                 <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
                   <article class="box-icon-modern box-icon-modern-2">
-                    <div
-                      class="box-icon-modern-icon linearicons-phone-in-out"
-                    ></div>
+                    <div class="box-icon-modern-icon fas fa-users"></div>
                     <h5 class="box-icon-modern-title">
                       <a href="#">CONNECTIVITY</a>
                     </h5>
                     <div class="box-icon-modern-decor"></div>
                     <p class="box-icon-modern-text">
-                      Participants have the opportunity to connect with experienced mentors and judges,
-                       enhancing their learning and networking experience during the hackathon.
+                      Participants have the opportunity to connect with experienced mentors and judges, enhancing their learning and networking experience during the hackathon.
                     </p>
                   </article>
                 </div>
                 <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
                   <article class="box-icon-modern box-icon-modern-2">
-                    <div class="box-icon-modern-icon linearicons-outbox"></div>
+                    <div class="box-icon-modern-icon fas fa-cogs"></div>
                     <h5 class="box-icon-modern-title">
                       <a href="#">TRANSFORM</a>
                     </h5>
@@ -331,20 +338,19 @@
                     </p>
                   </article>
                 </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
                   <article class="box-icon-modern box-icon-modern-2">
-                    <div class="box-icon-modern-icon linearicons-headset"></div>
+                    <div class="box-icon-modern-icon fas fa-handshake"></div>
+
                     <h5 class="box-icon-modern-title">
                       <a href="#">COLLABORATE</a>
                     </h5>
                     <div class="box-icon-modern-decor"></div>
                     <p class="box-icon-modern-text">
-                      Participants with us to reach tech's forefront. Engage our dynamic
-                      community, boosting innovation and visibility.
+                      Participants with us to reach tech's forefront. Engage our dynamic community, boosting innovation and visibility.
                     </p>
                   </article>
-                </div>
-              </div>
+                </div>              </div>
             </div>
           </div>
         </div>
@@ -354,7 +360,7 @@
       <section class="section section-fluid bg-default">
         <div
           class="parallax-container"
-          data-parallax-img="images/parallax-1.jpg"
+          data-parallax-img="cc.jpg"
         >
           <div
             class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay"
@@ -364,8 +370,8 @@
                 <div class="col-sm-7">
                   <h3 class="wow fadeInLeft">mentor section</h3>
                   <p>
-                    Do you need a unique software solution for your company? We
-                    know how to help you!
+                    "Meet our dedicated mentors, ready to guide and inspire you on your journey to success. 
+                    With diverse expertise and a passion for mentoring, they're here to help you thrive."
                   </p>
                   <div class="group-sm group-middle group justify-content-end">
                     <a
@@ -1534,6 +1540,228 @@
         </div>
       </section>
 
+
+
+      
+
+      <!-- FAQ Section -->
+      <section id="faq">
+        <div class="faq">
+          <h2>F.A.Q</h2>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">What is Code Cubicle and what makes it unique?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description quote-modern-text">
+                <hr>
+                <p>The Code Cubicle is a groundbreaking hackathon jointly organized by Reskill and Geek Room. It provides a unique experience, redefining the boundaries of creativity and technology, transcending conventional hackathons.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">When and where is Code Cubicle 2024 taking place?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Code Cubicle 2024 is an offline event scheduled for 19th-20th May. The venue is Microsoft Office Gurugram . It's a 36-hour hackathon that promises an immersive experience in tech innovation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">What is the prize pool for Code Cubicle, and how are the prizes distributed?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Code Cubicle boasts a prize pool worth INR 50,00,000+, with a cash prize worth INR 25,000+. Details about the prize distribution will be announced closer to the event.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">What engaging activities can participants expect during Code Cubicle?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Code Cubicle features live project presentations, idea pitching, judging by esteemed panels, and a fun and games round with prizes to keep participants engaged throughout the hackathon.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">What exclusive perks are provided to participants?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Participants at Code Cubicle enjoy exclusive perks, including free swags, networking opportunities with industry experts, goodies, accommodation, meals, and much more, enhancing their overall experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">How does Code Cubicle encourage innovation and problem-solving?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Code Cubicle challenges participants to push their boundaries and foster inventive solutions to real-world issues. It celebrates the union of innovation and technology, providing a platform for participants to showcase their skills.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">Who are the organizers of Code Cubicle, and what is their mission?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Code Cubicle is hosted by the collaborative efforts of Reskill and Geek Room. Their mission is to provide a platform for tech enthusiasts to showcase their skills and amplify their potential through an exciting blend of competition, learning, and groundbreaking innovation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">How can participants connect with like-minded individuals and industry experts during Code Cubicle?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Participants can connect with like-minded individuals and industry experts through networking sessions, project collaborations, and various interactive opportunities provided during Code Cubicle. It's a unique chance to learn, compete, and establish valuable connections.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">Is there a code of conduct for participants?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Yes, participants are required to follow the code of conduct outlined at <a href="#">[Code of Conduct]</a>. It ensures a positive and respectful environment for all attendees.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">How can I stay updated on Code Cubicle announcements and details?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Stay updated on Code Cubicle announcements and details by regularly checking the official website. Additionally, follow their social media channels for the latest news and updates regarding the event.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">How can I register for Code Cubicle 2024?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>To register for Code Cubicle 2024, visit the official website and follow the registration instructions. The registration link on Devfolio can be found <a href="https://code-cubicle.devfolio.co/" target="_blank">[here]</a>. Complete the registration form and make sure to adhere to the specified deadlines.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">What is the maximum team size allowed for Code Cubicle?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>The maximum team size allowed for Code Cubicle is 4 members. Participants can form teams with a minimum of 1 member and a maximum of 4 members.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">Can I participate as an individual, or is it mandatory to be part of a team?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Code Cubicle allows both individual and team participation. You can register as an individual and participate solo, or you can form a team with up to 3 other members.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">Are there any specific requirements for the projects that participants can work on?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Participants in Code Cubicle have the flexibility to choose the type of projects they want to work on. There are no specific requirements, allowing participants to showcase their creativity and skills by working on innovative solutions to real-world issues.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <span class="faq-item-header-title">What should I bring to Code Cubicle, and what will be provided by the organizers?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down faq-item-header-icon">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="faq-item-description-wrapper">
+              <div class="faq-item-description">
+                <hr>
+                <p>Participants are encouraged to bring their laptops and any specific tools or hardware they may need for coding. Organizers will provide the necessary infrastructure, but participants should ensure they have everything they need for a successful hacking experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      
       <!-- Bottom Banner-->
 
       <!-- RD Google Map-->
